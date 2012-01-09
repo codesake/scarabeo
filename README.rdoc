@@ -1,6 +1,32 @@
 = scarabeo
 
-Description goes here.
+scarabeo is a library to play with words and letters mainly in order to make
+permutation over a given string. Let me give you an example: you want to test
+if a string is a regular password for a given service. In addition to the plain
+string, you may want to try some very basic permutations (numbers in place of
+letters, randomic uppercase, some number as trailer and so on).
+
+Of course you can use scarabeo just for fun.
+
+== Install scarabeo
+
+  gem install scarabeo
+
+== Use scarabeo
+
+First of all you may want to require the gem before using it:
+
+  require 'scarabeo'
+
+Then let's just start playing with letters...
+
+=== Change a single character into the appropriate number as a real lamer would do
+
+  puts "This is a test".lamerize('e')
+
+=== Write a whole sentence in a real lamer way
+
+  puts "This is a longer sentence to be written in a lamer".lamerize
 
 == Contributing to scarabeo
  
@@ -14,6 +40,6 @@ Description goes here.
 
 == Copyright
 
-Copyright (c) 2012 Paolo Perego. See LICENSE.txt for
+Copyright (c) 2012 Paolo Perego. See LICENSE for
 further details.
 

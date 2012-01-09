@@ -1,7 +1,13 @@
 require File.expand_path(File.dirname(__FILE__) + '/spec_helper')
 
-describe "Scarabeo" do
-  it "fails" do
-    fail "hey buddy, you should probably rename this file and start specing for real"
+describe 'Codesake' do
+  describe "Scarabeo" do
+    it 'should change any o, even uppercase to 0' do
+      'taco is gOOd'.lamerize('o').should == 'tac0 is g00d'
+    end
+
+    it 'should change any lamer char in the charset if no param is supplied' do
+      'this is a test for lamerize method'.lamerize.should == "7h1s 1s 4 73s7 f0r 14m3r1z3 m37h0d"
+    end
   end
 end
