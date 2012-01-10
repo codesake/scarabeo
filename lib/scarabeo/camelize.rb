@@ -18,10 +18,14 @@ module Codesake
             s1=s1.capitalize
             result << s1 + ' '
           end
-          return result.chop
+        when ALTERNATE_LETTER
+          s = string.split(' ')
+          s.each do |s1|
+
+          end
 
         end
-        string
+        result.chop
       end
 
     end
